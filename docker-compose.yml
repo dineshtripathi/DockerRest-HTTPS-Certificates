@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dockerrestapi:
+    image: ${DOCKER_REGISTRY}dockerrestapi
+    build:
+      context: .
+      dockerfile: Dockerfile

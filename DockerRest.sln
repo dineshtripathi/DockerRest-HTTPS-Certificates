@@ -3,9 +3,48 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{5DDE50D0-0A26-4047-A4B8-42312989EB06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerRestAPI", "WebAPI\DockerRestAPI\DockerRestAPI.csproj", "{AE1818AC-6248-4ADC-AB0F-37BFE105D161}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainModel", "DomainModel", "{80DD8FEF-7D8F-42EC-ADCF-1DDFE52E2C83}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestModel", "RestModel\RestModel.csproj", "{3A6747B4-F67C-4337-9D58-2B7C7BD1DF14}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8760FB56-CFCE-4E5A-AC12-3AAB5AF9AE55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BEF56DD3-A24A-4577-9AED-24A72EA9BD7C}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		C:\Users\Administrator\.aspnet\https\DockerRestAPI.pfx = C:\Users\Administrator\.aspnet\https\DockerRestAPI.pfx
+		HowToRunDocker.md = HowToRunDocker.md
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE1818AC-6248-4ADC-AB0F-37BFE105D161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE1818AC-6248-4ADC-AB0F-37BFE105D161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE1818AC-6248-4ADC-AB0F-37BFE105D161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE1818AC-6248-4ADC-AB0F-37BFE105D161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A6747B4-F67C-4337-9D58-2B7C7BD1DF14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A6747B4-F67C-4337-9D58-2B7C7BD1DF14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A6747B4-F67C-4337-9D58-2B7C7BD1DF14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A6747B4-F67C-4337-9D58-2B7C7BD1DF14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8760FB56-CFCE-4E5A-AC12-3AAB5AF9AE55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8760FB56-CFCE-4E5A-AC12-3AAB5AF9AE55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8760FB56-CFCE-4E5A-AC12-3AAB5AF9AE55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8760FB56-CFCE-4E5A-AC12-3AAB5AF9AE55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AE1818AC-6248-4ADC-AB0F-37BFE105D161} = {5DDE50D0-0A26-4047-A4B8-42312989EB06}
+		{3A6747B4-F67C-4337-9D58-2B7C7BD1DF14} = {80DD8FEF-7D8F-42EC-ADCF-1DDFE52E2C83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B30CC024-7C7C-4E54-AD29-5E7B995211D9}

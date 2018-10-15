@@ -1,0 +1,18 @@
+version: '3.4'
+services:
+  dockerrestapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_URLS=https://localhost;http://localhost
+      - ASPNETCORE_HTTPS_PORT=44334
+    ports:
+      - "33684:80"
+      - "44334:443"
+    volumes:
+       - ${APPDATA}/Microsoft/UserSecrets/:/root/.microsoft/usersecrets
+       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https/
+networks:
+  default:
+    external:
+      name: nat
